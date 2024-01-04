@@ -1,0 +1,5 @@
+val mediaPlayer = MediaPlayer.create(this, R.raw.do1)
+button.setOnClickLinstener{mediaPlauer.start()}
+...
+//사용이 끝나면 릴리즈해야 함
+mediaPlayer.release()
