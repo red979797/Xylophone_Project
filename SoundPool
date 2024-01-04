@@ -1,0 +1,4 @@
+val soundPool = SoundPool.Builder().build() // 객체생성
+
+val soundId =soundPool.load(this, R.raw.do1, 1) // 사운드 로드, id값 반환
+button.setOnClickListener{ soundPool.play(soundId, 1.0f, 1.0f, 0, 0, 1.0f) }
